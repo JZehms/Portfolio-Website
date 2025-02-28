@@ -1,0 +1,176 @@
+import "./Component-Styles/About.css";
+
+const About = () => {
+  return (
+    <section id="about" className="about-section">
+      <div className="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Josh Zehms, a passionate frontend developer with a love for
+          creating beautiful, functional, and user-friendly web applications. I
+          specialize in building responsive and interactive interfaces using
+          modern technologies and frameworks.
+        </p>
+        <p>
+          I work as a Full Stack Developer with expertise creating Front Ends.
+          (EXPAND ON ME)
+        </p>
+        <h3>Front-End</h3>
+        <div className="tech-stack">
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-js-square"></i>
+              <span className="tooltip-text">JavaScript</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+            <img
+                src="/src/assets/react.svg"
+                alt="React"
+                className="react-icon"
+                />
+              <span className="tooltip-text">React</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-html5"></i>
+              <span className="tooltip-text">HTML5</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-css3-alt"></i>
+              <span className="tooltip-text">CSS3</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-bootstrap"></i>
+              <span className="tooltip-text">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <h3>Back-End</h3>
+        <div className="tech-stack">
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-java"></i>
+              <span className="tooltip-text">Java</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-node"></i>
+              <span className="tooltip-text">Node.js</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+            <img
+                src="/src/assets/sql-icon.svg"
+                alt="SQL"
+                className="sql-icon"
+                />
+              <span className="tooltip-text">SQL</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-aws"></i>
+              <span className="tooltip-text">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <h3>Testing</h3>
+        <div className="tech-stack">
+          <div className="tech-item">
+            <div className="icon-container">
+                <img
+                src="/src/assets/Cypress-Icon.svg"
+                alt="Cypress"
+                className="cypress-icon"
+                />
+              <span className="tooltip-text">Cypress</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+                <img
+                src="/src/assets/Selenium-Icon.svg"
+                alt="Selenium"
+                className="selenium-icon"
+                />
+              <span className="tooltip-text">Selenium</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fas fa-list-check"></i>
+              <span className="tooltip-text">Unit Testing</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fas fa-bug"></i>
+              <span className="tooltip-text">Debugging</span>
+            </div>
+          </div>
+        </div>
+
+        <h3>Software & Platforms</h3>
+        <div className="tech-stack">
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-git"></i>
+              <span className="tooltip-text">Git</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-github"></i>
+              <span className="tooltip-text">Github</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+            <img
+                src="/src/assets/seo-icon.svg"
+                alt="SEO"
+                className="seo-icon"
+                />
+              <span className="tooltip-text">SEO</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-figma"></i>
+              <span className="tooltip-text">Figma</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <i className="fab fa-bitbucket"></i>
+              <span className="tooltip-text">Bitbucket</span>
+            </div>
+          </div>
+          <div className="tech-item">
+            <div className="icon-container">
+            <img
+                src="/src/assets/jira-icon.svg"
+                alt="Jira"
+                className="jira-icon"
+                />
+              <span className="tooltip-text">Jira</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
