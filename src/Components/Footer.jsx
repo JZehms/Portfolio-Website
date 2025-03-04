@@ -1,7 +1,9 @@
+import "./Component-Styles/Footer.css"
+
 const Footer = () => {
     return (
         <footer>
-            <p>2025 Joshua Zehms Portfolio. All rights reserved.</p>
+            <p>&copy; 2025 Joshua Zehms Portfolio. All rights reserved.</p>
         </footer>
     )
 }

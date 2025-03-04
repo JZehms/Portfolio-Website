@@ -1,0 +1,62 @@
+#hero, #about, #contact {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4rem 2.5rem;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.8);
+    color: #ede7f6;
+    font-family: Fira Code, monospace;
+    font-weight: 500;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  #hero h2 {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+  }
+
+  #hero .hero-inverse{
+    color:#9c27b0;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+  }
+  
+  #hero .hero-sub-text {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  .contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    letter-spacing: .5rem;
+  }
+
+  @media (max-width: 768px) {
+    
+    #hero h1 {
+      font-size: 2rem;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+    }
+    
+  }

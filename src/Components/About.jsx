@@ -6,15 +6,21 @@ const About = () => {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          Hi, I'm Josh Zehms, a passionate frontend developer with a love for
-          creating beautiful, functional, and user-friendly web applications. I
+          Hi, I'm Joshua Zehms, a passionate full-stack developer with a love
+          for creating beautiful, functional, and user-friendly applications. I
           specialize in building responsive and interactive interfaces using
           modern technologies and frameworks.
         </p>
         <p>
-          I work as a Full Stack Developer with expertise creating Front Ends.
-          (EXPAND ON ME)
+          On the front end I focus most of my time and energy into learning and
+          building with React, but I'm constantly dabling with and exploring new
+          frameworks to better understand the front-end landscape. When I'm
+          building a backend I'll usually reach for me go-to pairing,
+          Javascript/NodeJS, and AWS
         </p>
+
+        <h3 className="tech-title">Technologies</h3>
+        <hr className="about-content-seperator"></hr>
         <h3>Front-End</h3>
         <div className="tech-stack">
           <div className="tech-item">
@@ -25,11 +31,11 @@ const About = () => {
           </div>
           <div className="tech-item">
             <div className="icon-container">
-            <img
+              <img
                 src="/src/assets/react.svg"
                 alt="React"
                 className="react-icon"
-                />
+              />
               <span className="tooltip-text">React</span>
             </div>
           </div>
@@ -69,11 +75,11 @@ const About = () => {
           </div>
           <div className="tech-item">
             <div className="icon-container">
-            <img
+              <img
                 src="/src/assets/sql-icon.svg"
                 alt="SQL"
                 className="sql-icon"
-                />
+              />
               <span className="tooltip-text">SQL</span>
             </div>
           </div>
@@ -83,27 +89,37 @@ const About = () => {
               <span className="tooltip-text">AWS</span>
             </div>
           </div>
+          <div className="tech-item">
+            <div className="icon-container">
+              <img
+                src="/src/assets/vite-icon.svg"
+                alt="Vite"
+                className="vite-icon"
+              />
+              <span className="tooltip-text">Vite</span>
+            </div>
+          </div>
         </div>
 
         <h3>Testing</h3>
         <div className="tech-stack">
           <div className="tech-item">
             <div className="icon-container">
-                <img
+              <img
                 src="/src/assets/Cypress-Icon.svg"
                 alt="Cypress"
                 className="cypress-icon"
-                />
+              />
               <span className="tooltip-text">Cypress</span>
             </div>
           </div>
           <div className="tech-item">
             <div className="icon-container">
-                <img
+              <img
                 src="/src/assets/Selenium-Icon.svg"
                 alt="Selenium"
                 className="selenium-icon"
-                />
+              />
               <span className="tooltip-text">Selenium</span>
             </div>
           </div>
@@ -137,11 +153,11 @@ const About = () => {
           </div>
           <div className="tech-item">
             <div className="icon-container">
-            <img
+              <img
                 src="/src/assets/seo-icon.svg"
                 alt="SEO"
                 className="seo-icon"
-                />
+              />
               <span className="tooltip-text">SEO</span>
             </div>
           </div>
@@ -159,11 +175,11 @@ const About = () => {
           </div>
           <div className="tech-item">
             <div className="icon-container">
-            <img
+              <img
                 src="/src/assets/jira-icon.svg"
                 alt="Jira"
                 className="jira-icon"
-                />
+              />
               <span className="tooltip-text">Jira</span>
             </div>
           </div>

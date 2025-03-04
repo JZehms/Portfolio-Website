@@ -1,198 +1,170 @@
 .about-section {
-    padding: 4rem 2rem;
-    background-color: #1a1a1a;
-    color: #ede7f6;
-    text-align: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #9c27b0;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: #9c27b0;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-item,
+.cypress-icon,
+.selenium-icon,
+.seo-icon,
+.vite-icon,
+.sql-icon,
+.jira-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ede7f6;
+  transition: transform 0.3s ease, color 0.3s ease;
+  height: 40px;
+  width: 40px;
+}
+
+.tech-item i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  color: #d1c4e9;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-container .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  color: #ede7f6;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 12px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.icon-container .tooltip-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(106, 27, 154, 0.6);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.icon-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.icon-container .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(106, 27, 154, 0.7) transparent transparent transparent;
+}
+
+#about .tech-title {
+  font-size: 2.5rem;
+}
+
+hr.about-content-seperator {
+  background-color: #9c27b0;
+  border-top: 1px solid #b703d7;
+  opacity: 0.3;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
+  to {
+    transform: rotate(360deg);
   }
-  
+}
+
+.react-icon {
+  height: 40px;
+  width: 40px;
+  animation: spin 5s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
   .about-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #9c27b0;
-  }
-  
-  .about-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .about-content h3 {
     font-size: 2rem;
-    margin: 2rem 0 1rem;
-    color: #9c27b0;
   }
-  
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
   .tech-stack {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
   }
-  
+
   .tech-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #ede7f6;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 1.2rem;
   }
-  
+
   .tech-item i {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
-  
-  .tech-item:hover {
-    transform: translateY(-5px);
-    color: #d1c4e9;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #9c27b0;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #fff;
-    color: #9c27b0;
-  }
-  
-  .icon-container {
-    position: relative;
-    display: inline-block;
-  }
-  
+
   .icon-container .tooltip-text {
-    visibility: hidden;
-    width: 120px;
-    color: #ede7f6;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 12px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    font-size: 1.1rem; 
-    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 6px 10px;
   }
-  
-  /* Semi-transparent background using ::before */
-  .icon-container .tooltip-text::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(106, 27, 154, 0.6);
-    border-radius: 6px;
-    z-index: -1;
-  }
-  
-  .icon-container:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(-10px);
-  }
-  
-  /* Tooltip arrow */
-  .icon-container .tooltip-text::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgba(106, 27, 154, 0.7) transparent transparent transparent; 
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .react-icon {
-    height: 40px;
-    width: 40px;
-    animation: spin 5s linear infinite; /* Spin for 5 seconds, linear, infinite loop */
-  }
-
-  .cypress-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .selenium-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .seo-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .sql-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .jira-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 2rem 1rem;
-    }
-  
-    .about-content h2 {
-      font-size: 2rem;
-    }
-  
-    .about-content p {
-      font-size: 1rem;
-    }
-  
-    .tech-stack {
-      gap: 1rem;
-    }
-  
-    .tech-item {
-      font-size: 1.2rem;
-    }
-  
-    .tech-item i {
-      font-size: 2rem;
-    }
-  
-    .icon-container .tooltip-text {
-      font-size: 0.9rem;
-      padding: 6px 10px;
-    }
-  }
+}

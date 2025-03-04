@@ -1,7 +1,9 @@
 import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
+import "./Component-Styles/NavBar.css";
 
 const NavBar = () => {
   return (
+    <section id="navbar" className="navbar-">
     <nav className="navbar">
       <header className="navbar-header">joshzehms.dev</header>
       <ul>
@@ -45,6 +47,7 @@ const NavBar = () => {
         </li>
       </ul>
     </nav>
+    </section>
   );
 };
 
