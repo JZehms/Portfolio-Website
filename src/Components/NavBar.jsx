@@ -2,28 +2,45 @@ import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
 import "./Component-Styles/NavBar.css";
 
 const NavBar = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section id="navbar" className="navbar-">
     <nav className="navbar">
       <header className="navbar-header">joshzehms.dev</header>
       <ul>
         <li>
-          <a href="#about" className="navbar-link">
-            {" "}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="navbar-link"
+          >
+            Home
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => scrollToSection("about")}
+            className="navbar-link"
+          >
             About
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#contact" className="navbar-link">
-            {" "}
-            Contact Me
-          </a>
+          <button
+            onClick={() => scrollToSection("projects")}
+            className="navbar-link"
+          >
+            Projects
+          </button>
         </li>
         <li>
-          <a href="#resume" className="navbar-link">
-            {" "}
-            Resume
-          </a>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="navbar-link"
+          >
+            Contact
+          </button>
         </li>
         <li>
           <a
@@ -47,7 +64,6 @@ const NavBar = () => {
         </li>
       </ul>
     </nav>
-    </section>
   );
 };
 

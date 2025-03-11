@@ -19,3 +19,6 @@ const useTheme = () => {
 };
 
 export default useTheme;
+
+
+// TODO: Need to actully add this in. Needs to be global but have the symbol in the navBar.

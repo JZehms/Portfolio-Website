@@ -4,23 +4,36 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-content">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Joshua Zehms, a passionate full-stack developer with a love
-          for creating beautiful, functional, and user-friendly applications. I
-          specialize in building responsive and interactive interfaces using
-          modern technologies and frameworks.
-        </p>
-        <p>
-          On the front end I focus most of my time and energy into learning and
-          building with React, but I'm constantly dabling with and exploring new
-          frameworks to better understand the front-end landscape. When I'm
-          building a backend I'll usually reach for me go-to pairing,
-          Javascript/NodeJS, and AWS
-        </p>
+        <h2 className="about-title">About Me</h2>
+        <div className="about-body">
+          <div className="about-img-container">
+            <img
+              className="about-me-img"
+              alt="About Me"
+              src="src/assets/Placeholder-Image.jpg"
+            />
+          </div>
+          <div className="about-text-container">
+            <p>
+              Hi, I'm Joshua Zehms, a passionate full-stack developer with a
+              love for creating beautiful, functional, and user-friendly
+              applications. I specialize in building responsive and interactive
+              interfaces using modern technologies and frameworks.
+            </p>
+            <p>
+              On the front end I focus most of my time and energy into learning
+              and building with React, but I'm constantly dabbling with and
+              exploring new frameworks to better understand the front-end
+              landscape. When I'm building a backend I'll usually reach for my
+              go-to pairing, Javascript/NodeJS, and AWS.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <h3 className="tech-title">Technologies</h3>
+      <div className="tech-stack-wrapper">
         <hr className="about-content-seperator"></hr>
+        <h3 className="tech-title">Technologies</h3>
         <h3>Front-End</h3>
         <div className="tech-stack">
           <div className="tech-item">
