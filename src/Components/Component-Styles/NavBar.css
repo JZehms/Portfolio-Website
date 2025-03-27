@@ -1,32 +1,62 @@
+#navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .navbar {
-  padding: 1rem 2rem;
+  padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
+  background: rgba(26, 26, 26, 0.8);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(26, 26, 26, 0.8);
+  flex: 1;
+  max-width: 100%;
 }
 
 .navbar-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ede7f6;
 }
 
-.navbar ul {
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #ede7f6;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: block;
+}
+
+.nav-menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(26, 26, 26, 0.95);
+  width: 100%;
 }
 
-.navbar li {
-  margin: 0;
+.nav-menu.open {
+  display: flex;
 }
 
 .navbar-link {
@@ -37,6 +67,9 @@
   font-weight: 700;
   text-decoration: none;
   transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar-link:hover {
@@ -54,20 +87,33 @@
   fill: #ca61dc;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+@media (min-width: 992px) {
+  .navbar-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ede7f6;
   }
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
+  .menu-toggle {
+    display: none;
   }
 
-  .navbar-link {
-    padding: 0.5rem 0;
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin-left: auto;
   }
 }
