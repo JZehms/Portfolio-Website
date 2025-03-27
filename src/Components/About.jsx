@@ -31,169 +31,191 @@ const About = () => {
         </div>
       </div>
 
+      <div className="journey-wrapper">
+        <h3 className="journey-title">My Professional Journey so far...</h3>
+        <div className="journey-container">
+          <div className="journey-left">Here</div>
+          <div className="journey-center">
+            <i className="fas fa-jet-fighter-up"></i>
+            <hr className="journey-separator" />
+          </div>
+          <div className="journey-right">Here</div>
+        </div>
+      </div>
+
       <div className="tech-stack-wrapper">
-        <hr className="about-content-seperator"></hr>
-        <h3 className="tech-title">Technologies</h3>
-        <h3>Front-End</h3>
-        <div className="tech-stack">
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-js-square"></i>
-              <span className="tooltip-text">JavaScript</span>
+        <h3 className="tech-title">My Tech Stack</h3>
+        <hr className="tech-stack-divider"></hr>
+        <div className="front-back-container">
+          <div className="tech-stack-category">
+            <h3>Front-End</h3>
+            <div className="tech-stack">
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-js-square"></i>
+                  <span className="tooltip-text">JavaScript</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/react.svg"
+                    alt="React"
+                    className="react-icon"
+                  />
+                  <span className="tooltip-text">React</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-html5"></i>
+                  <span className="tooltip-text">HTML5</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-css3-alt"></i>
+                  <span className="tooltip-text">CSS3</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-bootstrap"></i>
+                  <span className="tooltip-text">Bootstrap</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/react.svg"
-                alt="React"
-                className="react-icon"
-              />
-              <span className="tooltip-text">React</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-html5"></i>
-              <span className="tooltip-text">HTML5</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-css3-alt"></i>
-              <span className="tooltip-text">CSS3</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-bootstrap"></i>
-              <span className="tooltip-text">Bootstrap</span>
-            </div>
-          </div>
-        </div>
 
-        <h3>Back-End</h3>
-        <div className="tech-stack">
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-java"></i>
-              <span className="tooltip-text">Java</span>
+          <div className="tech-stack-category">
+            <h3>Back-End</h3>
+            <div className="tech-stack">
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-java"></i>
+                  <span className="tooltip-text">Java</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-node"></i>
+                  <span className="tooltip-text">Node.js</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/sql-icon.svg"
+                    alt="SQL"
+                    className="sql-icon"
+                  />
+                  <span className="tooltip-text">SQL</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-aws"></i>
+                  <span className="tooltip-text">AWS</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/vite-icon.svg"
+                    alt="Vite"
+                    className="vite-icon"
+                  />
+                  <span className="tooltip-text">Vite</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-node"></i>
-              <span className="tooltip-text">Node.js</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/sql-icon.svg"
-                alt="SQL"
-                className="sql-icon"
-              />
-              <span className="tooltip-text">SQL</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-aws"></i>
-              <span className="tooltip-text">AWS</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/vite-icon.svg"
-                alt="Vite"
-                className="vite-icon"
-              />
-              <span className="tooltip-text">Vite</span>
-            </div>
-          </div>
-        </div>
 
-        <h3>Testing</h3>
-        <div className="tech-stack">
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/Cypress-Icon.svg"
-                alt="Cypress"
-                className="cypress-icon"
-              />
-              <span className="tooltip-text">Cypress</span>
+          <div className="tech-stack-category">
+            <h3>Testing</h3>
+            <div className="tech-stack">
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/Cypress-Icon.svg"
+                    alt="Cypress"
+                    className="cypress-icon"
+                  />
+                  <span className="tooltip-text">Cypress</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/Selenium-Icon.svg"
+                    alt="Selenium"
+                    className="selenium-icon"
+                  />
+                  <span className="tooltip-text">Selenium</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fas fa-list-check"></i>
+                  <span className="tooltip-text">Unit Testing</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fas fa-bug"></i>
+                  <span className="tooltip-text">Debugging</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/Selenium-Icon.svg"
-                alt="Selenium"
-                className="selenium-icon"
-              />
-              <span className="tooltip-text">Selenium</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fas fa-list-check"></i>
-              <span className="tooltip-text">Unit Testing</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fas fa-bug"></i>
-              <span className="tooltip-text">Debugging</span>
-            </div>
-          </div>
-        </div>
 
-        <h3>Software & Platforms</h3>
-        <div className="tech-stack">
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-git"></i>
-              <span className="tooltip-text">Git</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-github"></i>
-              <span className="tooltip-text">Github</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/seo-icon.svg"
-                alt="SEO"
-                className="seo-icon"
-              />
-              <span className="tooltip-text">SEO</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-figma"></i>
-              <span className="tooltip-text">Figma</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <i className="fab fa-bitbucket"></i>
-              <span className="tooltip-text">Bitbucket</span>
-            </div>
-          </div>
-          <div className="tech-item">
-            <div className="icon-container">
-              <img
-                src="/src/assets/jira-icon.svg"
-                alt="Jira"
-                className="jira-icon"
-              />
-              <span className="tooltip-text">Jira</span>
+          <div className="tech-stack-category">
+            <h3>Software & Platforms</h3>
+            <div className="tech-stack">
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-git"></i>
+                  <span className="tooltip-text">Git</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-github"></i>
+                  <span className="tooltip-text">Github</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/seo-icon.svg"
+                    alt="SEO"
+                    className="seo-icon"
+                  />
+                  <span className="tooltip-text">SEO</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-figma"></i>
+                  <span className="tooltip-text">Figma</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <i className="fab fa-bitbucket"></i>
+                  <span className="tooltip-text">Bitbucket</span>
+                </div>
+              </div>
+              <div className="tech-item">
+                <div className="icon-container">
+                  <img
+                    src="/src/assets/jira-icon.svg"
+                    alt="Jira"
+                    className="jira-icon"
+                  />
+                  <span className="tooltip-text">Jira</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
