@@ -2,9 +2,11 @@ import "./Component-Styles/Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <p>&copy; 2025 Joshua Zehms Portfolio. All rights reserved.</p>
-    </footer>
+    <section id="footer">
+      <footer className="footer-container">
+        <p>&copy; 2025 Joshua Zehms Portfolio. All rights reserved.</p>
+      </footer>
+    </section>
   );
 };
 
