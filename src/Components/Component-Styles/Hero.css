@@ -1,7 +1,16 @@
 #hero {
   display: flex;
-  justify-content: flex-start;
-  padding: 4rem 2.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+#hero .hero-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
   height: 100%;
   background: rgba(26, 26, 26, 0.8);
   color: #ede7f6;
@@ -9,38 +18,39 @@
   font-weight: 500;
 }
 
-#hero h1 {
-  font-size: 2.5rem;
-  margin: 0;
+#hero .landing-intro {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
 }
 
-#hero h2 {
-  font-size: 2.5rem;
-  margin: 1rem 0;
+#hero .landing-intro-name {
+  font-size: 2rem;
+  margin: 1rem 0rem;
 }
 
 #hero .hero-inverse {
   color: #c042d5;
 }
 
-#hero p {
+#hero .hero-title {
+  margin: 1rem 0rem;
   font-size: 1.5rem;
-  margin: 10px 0 0;
 }
 
 #hero .hero-sub-text {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  max-width: 80%;
+  margin: 0.5rem 0rem;
 }
 
-/* Wrapper for button and link */
-.hero-buttons {
+#hero .hero-buttons {
   display: flex;
-  gap: 10px; /* Space between the button and link */
+  flex-direction: column;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
-/* Styling for both the button and the anchor link */
 #hero .contact-button,
 .contact-resume {
   display: inline-flex;
@@ -52,13 +62,13 @@
   background-color: #8c239e;
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow: hidden;
-  font-size: 1.1rem;
   white-space: nowrap;
-  border:#8c239e;
+  border: #8c239e;
   cursor: pointer;
 }
 
@@ -96,12 +106,39 @@
   margin-right: 0;
 }
 
-@media (max-width: 768px) {
-  #hero h1 {
+@media (min-width: 768px) {
+  #hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 2.5rem;
+  }
+
+  #hero .landing-intro {
     font-size: 2rem;
   }
 
-  #hero p {
-    font-size: 1.2rem;
+  #hero .landing-intro-name {
+    font-size: 3rem;
+    margin: 1rem 0;
   }
+
+  #hero .hero-title {
+    font-size: 2rem;
+  }
+
+  #hero .hero-sub-text {
+    font-size: 1.5rem;
+  }
+
+  #hero .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #hero .contact-button,
+.contact-resume {
+  font-size: 1.25rem;
+}
 }
