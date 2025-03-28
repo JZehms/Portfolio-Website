@@ -10,13 +10,10 @@ const scrollToSection = (sectionId) => {
 const Hero = () => {
   return (
     <section id="hero">
-      <div>
-        <h1>
-          <span className="landing-intro">
-            <span className="hero-inverse">Hi</span>, my{" "}
-            <span className="hero-inverse">name</span> is{" "}
-          </span>
-          <br></br>
+      <div className="hero-container">
+        <h1 className="landing-intro">
+          <span className="hero-inverse">Hi</span>, my{" "}
+          <span className="hero-inverse">name</span> is <br></br>
         </h1>
         <h2 className="landing-intro-name">
           Joshua <span className="hero-inverse">Zehms</span>
@@ -26,9 +23,8 @@ const Hero = () => {
           <span className="hero-inverse">Full-Stack</span> Developer
         </h2>
         <p className="hero-sub-text">
-          I build beautiful and functional web experiences,
-          <br></br>so please feel free to reach out. I would love to connect
-          with you!
+          I build beautiful and functional web experiences, so please feel free
+          to reach out. I would love to connect with you!
         </p>
         <div className="hero-buttons">
           <button
