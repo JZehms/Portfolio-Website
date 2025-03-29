@@ -46,7 +46,6 @@ const About = () => {
 
         <div className="tech-stack-wrapper">
           <h3 className="tech-title">My Tech Stack</h3>
-          <hr className="tech-stack-divider"></hr>
           <div className="tech-stack-container">
             <div className="tech-stack-category">
               <h4>Front-End</h4>
@@ -138,7 +137,7 @@ const About = () => {
                 <div className="tech-item">
                   <div className="icon-container">
                     <img
-                      src="/src/assets/Cypress-Icon.svg"
+                      src="/src/assets/Cypress-Logo-White.png"
                       alt="Cypress"
                       className="cypress-icon"
                     />
