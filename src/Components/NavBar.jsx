@@ -11,14 +11,21 @@ const NavBar = () => {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // Close menu on mobile after clicking a link
+    setMenuOpen(false);
   };
 
   return (
     <section id="navbar">
       <nav className="navbar">
         <div className="navbar-container">
-          <header className="navbar-header">joshzehms.dev</header>
+          <button
+            className="navbar-header"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer", background: "none", border: "none" }}
+            aria-label="Scroll to top"
+          >
+            joshzehms.dev
+          </button>
           <button className="menu-toggle" onClick={toggleMenu}>
             <FaBars />
           </button>

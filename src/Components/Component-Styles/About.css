@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 3rem 2rem;
   background: rgba(26, 26, 26, 0.8);
   color: #ede7f6;
   font-family: "Fira Code", monospace;
@@ -17,14 +17,14 @@
 }
 
 .about-content {
-  padding: 2rem 1rem;
+  padding: 0 1.5rem 1rem 1.5rem;
   width: 100%;
 }
 
 .about-title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 0 0 2rem 0;
   color: #c042d5;
 }
 
@@ -48,7 +48,6 @@
 .about-text-container p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
 }
 
 .tech-stack-wrapper {
@@ -56,13 +55,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .tech-title {
   font-size: 1.8rem;
   color: #c042d5;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
 }
 
 .tech-stack-container {
@@ -77,6 +76,7 @@
   font-size: 1.5rem;
   color: #c042d5;
   text-align: center;
+  margin: 1.5rem 0 .5rem 0;
 }
 
 .tech-stack {
@@ -99,7 +99,6 @@
   font-size: 2rem;
 }
 
-/* Tooltip Styles */
 .icon-container {
   position: relative;
   display: inline-block;
@@ -155,7 +154,7 @@
 .journey-title {
   font-size: 1.8rem;
   color: #c042d5;
-  margin-bottom: 1.5rem;
+  margin: 0 1.5rem 1.5rem 0;
   text-align: center;
 }
 
