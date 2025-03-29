@@ -208,13 +208,6 @@ hr.journey-separator {
   margin: 0.5rem 0;
 }
 
-.tech-stack-divider {
-  align-items: center;
-  width: 100%;
-  border: 1px solid #9d27b0;
-}
-
-/* Tablet Styles (600px+) */
 @media (min-width: 768px) {
   .about-container {
     padding: 3rem 2rem;
