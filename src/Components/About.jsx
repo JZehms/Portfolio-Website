@@ -59,6 +59,14 @@ const About = () => {
               </div>
               <div className="timeline-work-right">Here</div>
             </li>
+            <li className="timeline-self-dev">
+              <div className="timeline-self-dev-left">Here</div>
+              <div className="timeline-center">
+                <i className="fas fa-chalkboard"></i>
+                <hr className="timeline-separator" />
+              </div>
+              <div className="timeline-self-dev-right">Here</div>
+            </li>
           </ul>
         </div>
 

@@ -75,7 +75,7 @@
   font-size: 1.5rem;
   color: #c042d5;
   text-align: center;
-  margin: 1.5rem 0 .5rem 0;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 .tech-stack {
@@ -159,7 +159,8 @@
 
 .timeline-jet,
 .timeline-edu,
-.timeline-work {
+.timeline-work,
+.timeline-self-dev {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -170,13 +171,15 @@
 }
 
 .timeline-edu,
-.timeline-work {
+.timeline-work,
+.timeline-self-dev {
   margin-top: 1rem;
 }
 
 .timeline-jet-left,
 .timeline-edu-left,
-.timeline-work-left {
+.timeline-work-left,
+.timeline-self-dev-left {
   flex: 1;
   text-align: right;
   padding: 1.5rem 0.5rem 0 0;
@@ -193,7 +196,8 @@
 
 .timeline-jet-right,
 .timeline-edu-right,
-.timeline-work-right {
+.timeline-work-right,
+.timeline-self-dev-right {
   flex: 1;
   text-align: left;
   padding: 1.5rem 0 0 0.5rem;
@@ -202,10 +206,11 @@
 
 .fa-jet-fighter-up,
 .fa-school,
-.fa-code {
+.fa-code,
+.fa-chalkboard {
   background-color: #c042d5;
   border-radius: 10px;
-  padding: .25rem;
+  padding: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -242,13 +247,15 @@ hr.timeline-separator {
 
   .timeline-jet,
   .timeline-edu,
-  .timeline-work {
+  .timeline-work,
+  .timeline-self-dev {
     gap: 1rem;
   }
 
   .timeline-jet-left,
   .timeline-edu-left,
-  .timeline-work-left {
+  .timeline-work-left,
+  .timeline-self-dev-left {
     padding-right: 1.5rem;
   }
 
@@ -258,13 +265,15 @@ hr.timeline-separator {
 
   .timeline-jet-right,
   .timeline-edu-right,
-  .timeline-work-right {
+  .timeline-work-right,
+  .timeline-self-dev-right {
     padding-left: 1.5rem;
   }
 
   .fa-jet-fighter-up,
   .fa-school,
-  .fa-code {
+  .fa-code,
+  .fa-chalkboard {
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -324,14 +333,22 @@ hr.timeline-separator {
 
   .timeline-jet-left,
   .timeline-edu-left,
-  .timeline-work-left {
+  .timeline-work-left,
+  .timeline-self-dev-left {
     padding-right: 2.5rem;
   }
 
   .timeline-jet-right,
   .timeline-edu-right,
-  .timeline-work-right {
+  .timeline-work-right,
+  .timeline-self-dev-right {
     padding-left: 2.5rem;
+  }
+
+  .timeline-edu,
+  .timeline-work,
+  .timeline-self-dev {
+    margin-top: 2rem;
   }
 }
 
