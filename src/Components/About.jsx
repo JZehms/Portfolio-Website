@@ -34,14 +34,24 @@ const About = () => {
 
         <div className="timeline-wrapper">
           <h3 className="timeline-title">My Professional Journey so far...</h3>
-          <div className="timeline-container">
-            <div className="timeline-jet-left">Here</div>
-            <div className="timeline-center">
-              <i className="fas fa-jet-fighter-up"></i>
-              <hr className="timeline-separator" />
-            </div>
-            <div className="timeline-jet-right">Here</div>
-          </div>
+          <ul className="timeline-container">
+            <li className="timeline-jet">
+              <div className="timeline-jet-left">Here</div>
+              <div className="timeline-center">
+                <i className="fas fa-jet-fighter-up"></i>
+                <hr className="timeline-separator" />
+              </div>
+              <div className="timeline-jet-right">Here</div>
+            </li>
+            <li className="timeline-edu">
+              <div className="timeline-edu-left">Here</div>
+              <div className="timeline-center">
+                <i className="fas fa-school"></i>
+                <hr className="timeline-separator" />
+              </div>
+              <div className="timeline-edu-right">Here</div>
+            </li>
+          </ul>
         </div>
 
         <div className="tech-stack-wrapper">
