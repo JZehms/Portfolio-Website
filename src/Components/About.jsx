@@ -32,15 +32,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className="journey-wrapper">
-          <h3 className="journey-title">My Professional Journey so far...</h3>
-          <div className="journey-container">
-            <div className="journey-left">Here</div>
-            <div className="journey-center">
+        <div className="timeline-wrapper">
+          <h3 className="timeline-title">My Professional Journey so far...</h3>
+          <div className="timeline-container">
+            <div className="timeline-jet-left">Here</div>
+            <div className="timeline-center">
               <i className="fas fa-jet-fighter-up"></i>
-              <hr className="journey-separator" />
+              <hr className="timeline-separator" />
             </div>
-            <div className="journey-right">Here</div>
+            <div className="timeline-jet-right">Here</div>
           </div>
         </div>
 

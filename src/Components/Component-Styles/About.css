@@ -142,7 +142,7 @@
   animation: spin 5s linear infinite;
 }
 
-.journey-wrapper {
+.timeline-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,14 +150,14 @@
   margin: 2rem 0;
 }
 
-.journey-title {
+.timeline-title {
   font-size: 1.8rem;
   color: #c042d5;
   margin: 0 1.5rem 1.5rem 0;
   text-align: center;
 }
 
-.journey-container {
+.timeline-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -167,14 +167,14 @@
   gap: 0.5rem;
 }
 
-.journey-left {
+.timeline-jet-left {
   flex: 1;
   text-align: right;
   padding: 1.5rem 0.5rem 0 0;
   order: 1;
 }
 
-.journey-center {
+.timeline-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +182,7 @@
   padding: 0 0.5rem;
 }
 
-.journey-right {
+.timeline-jet-right {
   flex: 1;
   text-align: left;
   padding: 1.5rem 0 0 0.5rem;
@@ -199,7 +199,7 @@
   justify-content: center;
 }
 
-hr.journey-separator {
+hr.timeline-separator {
   background-color: #c042d5;
   width: 1px;
   height: 150px;
@@ -226,19 +226,19 @@ hr.journey-separator {
     gap: 2rem;
   }
 
-  .journey-container {
+  .timeline-container {
     gap: 1rem;
   }
 
-  .journey-left {
+  .timeline-jet-left {
     padding-right: 1.5rem;
   }
 
-  .journey-center {
+  .timeline-center {
     padding: 0 1rem;
   }
 
-  .journey-right {
+  .timeline-jet-right {
     padding-left: 1.5rem;
   }
 
@@ -247,7 +247,7 @@ hr.journey-separator {
     height: 2rem;
   }
 
-  hr.journey-separator {
+  hr.timeline-separator {
     height: 200px;
   }
 }
@@ -296,15 +296,15 @@ hr.journey-separator {
     padding: 8px 12px;
   }
 
-  .journey-title {
+  .timeline-title {
     font-size: 2rem;
   }
 
-  .journey-left {
+  .timeline-jet-left {
     padding-right: 2.5rem;
   }
 
-  .journey-right {
+  .timeline-jet-right {
     padding-left: 2.5rem;
   }
 }
