@@ -51,6 +51,14 @@ const About = () => {
               </div>
               <div className="timeline-edu-right">Here</div>
             </li>
+            <li className="timeline-work">
+              <div className="timeline-work-left">Here</div>
+              <div className="timeline-center">
+                <i className="fas fa-code"></i>
+                <hr className="timeline-separator" />
+              </div>
+              <div className="timeline-work-right">Here</div>
+            </li>
           </ul>
         </div>
 
