@@ -1,5 +1,92 @@
 import "./Component-Styles/About.css";
 
+const timelineData = [
+  {
+    id: "timeline-jet",
+    date: "2011-2021",
+    iconClass: "fas fa-jet-fighter-up",
+    title: "US Air Force",
+    location: "Las Vegas, South Korea, Afganistan, and the United Kingdom",
+    description:
+      "I began my military career as a logistician and quickly advanced to the role of Supervisor, where I managed a team of 80 personnel. This experience honed my leadership skills, emphasizing the importance of effective communication, teamwork, and adaptability in high-pressure environments.\n" +
+      "I played a key role in ensuring operational efficiency and making strategic decisions. My passion for technology grew as I sought out tools and systems to improve logistics operations and enhance team collaboration, ultimately driving my decision to pursue a degree in IT.\n"
+  },
+  {
+    id: "timeline-edu",
+    date: "2019-2023",
+    iconClass: "fas fa-school",
+    title: "B.S. in Computer Software Technology",
+    location: "The University of Arizona Global Campus",
+    description:
+      "Earned my degree in Computer Software Technology with a specialization in web development, databases, and core programming principles.\n" +
+      "Gained hands-on experience with core web technologies including HTML, CSS, JavaScript, PHP, and frameworks like React, specializing in both front-end and back-end development.\n" +
+      "Developed a strong expertise in relational databases and SQL, gaining a deep understanding of database management, optimization, and querying techniques.\n"
+  },
+  {
+    id: "timeline-work",
+    date: "2021-2025",
+    iconClass: "fas fa-code",
+    title: "Software Development Experience",
+    location: "ACS Technologies, Shaw Industries, and DHI Group Inc.",
+    description:
+      "Gained hands-on experience building and optimizing web applications on AWS, along with creating a C# web crawler for efficient data and image extraction.\n" +
+      "Designed, developed, and maintained custom Content Management Systems (CMS), taking ownership of front-end and back-end development. Created intuitive, user-friendly components for content management using React, JavaScript, HTML, and CSS. Developed secure APIs, integrated databases, and implemented advanced features like user authentication, role-based access, and media management to provide clients with scalable and flexible solutions for managing digital content.\n",
+  },
+  {
+    id: "timeline-self-dev",
+    date: "2025-Present",
+    iconClass: "fas fa-gear fa-lg",
+    title: "Self-Development & Learning",
+    location: "Continuing Education",
+    description:
+      "Dedicated to continuous learning, leveraging projects like this portfolio to enhance my skills and gain deeper familiarity with React and its ecosystem.\n" +
+      "Exploring modern frameworks, tools, and libraries such as Next.js, Redux, and TypeScript to broaden my knowledge and optimize my development workflow.\n",
+  },
+];
+
+const techStackData = {
+  "Front-End": [
+    { icon: "fab fa-js-square", name: "JavaScript", tooltip: "JavaScript" },
+    { icon: "fab fa-react", name: "React", tooltip: "React" },
+    { icon: "fab fa-html5", name: "HTML5", tooltip: "HTML5" },
+    { icon: "fab fa-css3-alt", name: "CSS3", tooltip: "CSS3" },
+    { icon: "fab fa-bootstrap", name: "Bootstrap", tooltip: "Bootstrap" },
+  ],
+  "Back-End": [
+    { icon: "fab fa-java", name: "Java", tooltip: "Java" },
+    { icon: "fab fa-node", name: "Node.js", tooltip: "Node.js" },
+    { name: "SQL", tooltip: "SQL", imageSrc: "/src/assets/sql-icon.svg" },
+    { icon: "fab fa-aws", name: "AWS", tooltip: "AWS" },
+    { name: "Vite", tooltip: "Vite", imageSrc: "/src/assets/vite-icon.svg" },
+  ],
+  Testing: [
+    {
+      name: "Cypress",
+      tooltip: "Cypress",
+      imageSrc: "/src/assets/Cypress-Logo-White.png",
+    },
+    {
+      name: "Selenium",
+      tooltip: "Selenium",
+      imageSrc: "/src/assets/Selenium-Icon.svg",
+    },
+    {
+      icon: "fas fa-list-check",
+      name: "Unit Testing",
+      tooltip: "Unit Testing",
+    },
+    { icon: "fas fa-bug", name: "Debugging", tooltip: "Debugging" },
+  ],
+  Software: [
+    { icon: "fab fa-git", name: "Git", tooltip: "Git" },
+    { icon: "fab fa-github", name: "Github", tooltip: "Github" },
+    { name: "SEO", tooltip: "SEO", imageSrc: "/src/assets/seo-icon.svg" },
+    { icon: "fab fa-figma", name: "Figma", tooltip: "Figma" },
+    { icon: "fab fa-bitbucket", name: "Bitbucket", tooltip: "Bitbucket" },
+    { name: "Jira", tooltip: "Jira", imageSrc: "/src/assets/jira-icon.svg" },
+  ],
+};
+
 const About = () => {
   return (
     <section id="about">
@@ -23,10 +110,11 @@ const About = () => {
               </p>
               <p>
                 On the front end I focus most of my time and energy into
-                learning and building with React, but I'm constantly dabbling
-                with and exploring new frameworks to better understand the
-                front-end landscape. When I'm building a backend I'll usually
-                reach for my go-to pairing, Javascript/NodeJS, and AWS.
+                learning and building with React, HTML, and CSS but I'm
+                constantly dabbling with and exploring new frameworks to better
+                understand the front-end landscape. When I'm building a backend
+                I'll usually reach for my go-to pairing, Javascript/NodeJS, and
+                AWS.
               </p>
             </div>
           </div>
@@ -35,215 +123,76 @@ const About = () => {
         <div className="timeline-wrapper">
           <h3 className="timeline-title">My Professional Journey so far...</h3>
           <ul className="timeline-container">
-            <li className="timeline-jet">
-              <div className="timeline-jet-left">Here</div>
-              <div className="timeline-center">
-                <i className="fas fa-jet-fighter-up"></i>
-                <hr className="timeline-separator" />
-              </div>
-              <div className="timeline-jet-right">Here</div>
-            </li>
-            <li className="timeline-edu">
-              <div className="timeline-edu-left">Here</div>
-              <div className="timeline-center">
-                <i className="fas fa-school"></i>
-                <hr className="timeline-separator" />
-              </div>
-              <div className="timeline-edu-right">Here</div>
-            </li>
-            <li className="timeline-work">
-              <div className="timeline-work-left">Here</div>
-              <div className="timeline-center">
-                <i className="fas fa-code"></i>
-                <hr className="timeline-separator" />
-              </div>
-              <div className="timeline-work-right">Here</div>
-            </li>
-            <li className="timeline-self-dev">
-              <div className="timeline-self-dev-left">Here</div>
-              <div className="timeline-center">
-                <i className="fas fa-chalkboard"></i>
-                <hr className="timeline-separator" />
-              </div>
-              <div className="timeline-self-dev-right">Here</div>
-            </li>
+            {timelineData.map((item, index) => (
+              <li key={item.id} className={`timeline-item ${item.id}`}>
+                {index % 2 === 0 ? (
+                  <>
+                    <div className="timeline-left">
+                      <span className="timeline-date">{item.date}</span>
+                    </div>
+                    <div className="timeline-center">
+                      <i className={item.iconClass}></i>
+                      <hr className="timeline-separator" />
+                    </div>
+                    <div className="timeline-right">
+                      <span className="timeline-sub-title">{item.title}</span>
+                      <br />
+                      <span className="timeline-sub-text">{item.location}</span>
+                      {item.description.split("\n").map((line) => (
+                        <p key={`${item.id}-${line}`}>{line}</p>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="timeline-right">
+                      <span className="timeline-sub-title">{item.title}</span>
+                      <br />
+                      <span className="timeline-sub-text">{item.location}</span>
+                      {item.description.split("\n").map((line) => (
+                        <p key={`${item.id}-${line}`}>{line}</p>
+                      ))}
+                    </div>
+                    <div className="timeline-center">
+                      <i className={item.iconClass}></i>
+                      <hr className="timeline-separator" />
+                    </div>
+                    <div className="timeline-left">
+                      <span className="timeline-date">{item.date}</span>
+                    </div>
+                  </>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="tech-stack-wrapper">
           <h3 className="tech-title">My Tech Stack</h3>
           <div className="tech-stack-container">
-            <div className="tech-stack-category">
-              <h4>Front-End</h4>
-              <div className="tech-stack">
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-js-square"></i>
-                    <span className="tooltip-text">JavaScript</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/react.svg"
-                      alt="React"
-                      className="react-icon"
-                    />
-                    <span className="tooltip-text">React</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-html5"></i>
-                    <span className="tooltip-text">HTML5</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-css3-alt"></i>
-                    <span className="tooltip-text">CSS3</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-bootstrap"></i>
-                    <span className="tooltip-text">Bootstrap</span>
-                  </div>
+            {Object.keys(techStackData).map((category) => (
+              <div className="tech-stack-category" key={category}>
+                <h4>{category}</h4>
+                <div className="tech-stack">
+                  {techStackData[category].map((item) => (
+                    <div className="tech-item" key={item.name}>
+                      <div className="icon-container">
+                        {item.imageSrc ? (
+                          <img
+                            src={item.imageSrc}
+                            alt={item.name}
+                            className={`${item.name.toLowerCase()}-icon`}
+                          />
+                        ) : (
+                          <i className={item.icon}></i>
+                        )}
+                        <span className="tooltip-text">{item.tooltip}</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
-
-            <div className="tech-stack-category">
-              <h4>Back-End</h4>
-              <div className="tech-stack">
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-java"></i>
-                    <span className="tooltip-text">Java</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-node"></i>
-                    <span className="tooltip-text">Node.js</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/sql-icon.svg"
-                      alt="SQL"
-                      className="sql-icon"
-                    />
-                    <span className="tooltip-text">SQL</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-aws"></i>
-                    <span className="tooltip-text">AWS</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/vite-icon.svg"
-                      alt="Vite"
-                      className="vite-icon"
-                    />
-                    <span className="tooltip-text">Vite</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="tech-stack-category">
-              <h4>Testing</h4>
-              <div className="tech-stack">
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/Cypress-Logo-White.png"
-                      alt="Cypress"
-                      className="cypress-icon"
-                    />
-                    <span className="tooltip-text">Cypress</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/Selenium-Icon.svg"
-                      alt="Selenium"
-                      className="selenium-icon"
-                    />
-                    <span className="tooltip-text">Selenium</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fas fa-list-check"></i>
-                    <span className="tooltip-text">Unit Testing</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fas fa-bug"></i>
-                    <span className="tooltip-text">Debugging</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="tech-stack-category">
-              <h4>Software</h4>
-              <div className="tech-stack">
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-git"></i>
-                    <span className="tooltip-text">Git</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-github"></i>
-                    <span className="tooltip-text">Github</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/seo-icon.svg"
-                      alt="SEO"
-                      className="seo-icon"
-                    />
-                    <span className="tooltip-text">SEO</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-figma"></i>
-                    <span className="tooltip-text">Figma</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <i className="fab fa-bitbucket"></i>
-                    <span className="tooltip-text">Bitbucket</span>
-                  </div>
-                </div>
-                <div className="tech-item">
-                  <div className="icon-container">
-                    <img
-                      src="/src/assets/jira-icon.svg"
-                      alt="Jira"
-                      className="jira-icon"
-                    />
-                    <span className="tooltip-text">Jira</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
