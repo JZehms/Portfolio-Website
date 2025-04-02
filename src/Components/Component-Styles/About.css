@@ -194,7 +194,7 @@
   .timeline-left,
   .timeline-right {
     flex: 1;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
   
   .timeline-left {
