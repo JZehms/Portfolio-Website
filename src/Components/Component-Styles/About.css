@@ -136,13 +136,12 @@
 .seo-icon,
 .vite-icon,
 .sql-icon,
-.jira-icon,
-.react-icon {
+.jira-icon {
   height: 40px;
   width: 40px;
 }
 
-.react-icon {
+.fa-react {
   animation: spin 5s linear infinite;
 }
 
