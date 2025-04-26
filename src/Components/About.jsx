@@ -94,13 +94,14 @@ const About = () => {
         <div className="about-content">
           <h2 className="about-title">About Me</h2>
           <div className="about-body">
-            <div className="about-img-container">
+            {/* TODO: Come back and add in image */}
+            {/* <div className="about-img-container">
               <img
                 className="about-me-img"
                 alt="About Me"
-                src="src/assets/Placeholder-Image.jpg"
+                src="src/assets/Profile-Pic.jpg"
               />
-            </div>
+            </div> */}
             <div className="about-text-container">
               <p>
                 Hi, I'm Joshua Zehms, a passionate full-stack developer with a
