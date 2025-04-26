@@ -7,7 +7,7 @@
 
 #navbar .navbar {
   background: rgba(26, 26, 26, 0.8);
-  padding: 1.5rem;
+  padding: .5rem .5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   width: 100%;
   box-sizing: border-box;
@@ -28,6 +28,9 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #ede7f6;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 #navbar .menu-toggle {
@@ -37,6 +40,10 @@
   font-size: 1.8rem;
   cursor: pointer;
   display: block;
+}
+
+#navbar .menu-toggle.open {
+  color: #ca61dc;
 }
 
 #navbar .nav-menu {
@@ -64,6 +71,8 @@
 
 #navbar .nav-menu.open {
   display: flex;
+  padding: 1rem 0.5rem 0 0;
+  color: #ca61dc;
 }
 
 #navbar .navbar-link {
@@ -130,5 +139,9 @@
     width: unset;
     min-width: unset;
     margin-right: unset;
+  }
+
+  #navbar .navbar {
+    padding: .5rem 1.5rem;
   }
 }
