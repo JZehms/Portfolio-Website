@@ -18,7 +18,13 @@ const NavBar = () => {
     <section id="navbar">
       <nav className="navbar">
         <div className="navbar-container">
-          <header className="navbar-header">joshzehms.dev</header>
+          <button
+            className="navbar-header"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ cursor: "pointer" }}
+          >
+            joshzehms.dev
+          </button>
           <button className="menu-toggle" onClick={toggleMenu}>
             <FaBars />
           </button>
