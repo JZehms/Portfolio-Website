@@ -90,7 +90,7 @@ const techStackData = {
 const About = () => {
   return (
     <section id="about">
-      <div className="about-contianer">
+      <div className="about-container">
         <div className="about-content">
           <h2 className="about-title">About Me</h2>
           <div className="about-body">
