@@ -1,4 +1,10 @@
 import "./Component-Styles/About.css";
+import sqlIcon from "../assets/sql-icon.svg";
+import viteIcon from "../assets/vite-icon.svg";
+import cypressLogo from "../assets/Cypress-Logo-White.png";
+import seleniumIcon from "../assets/Selenium-Icon.svg";
+import seoIcon from "../assets/seo-icon.svg";
+import jiraIcon from "../assets/jira-icon.svg";
 
 const timelineData = [
   {
@@ -9,7 +15,7 @@ const timelineData = [
     location: "Las Vegas, South Korea, Afganistan, and the United Kingdom",
     description:
       "I began my military career as a logistician and quickly advanced to the role of Supervisor, where I managed a team of 80 personnel. This experience honed my leadership skills, emphasizing the importance of effective communication, teamwork, and adaptability in high-pressure environments.\n" +
-      "I played a key role in ensuring operational efficiency and making strategic decisions. My passion for technology grew as I sought out tools and systems to improve logistics operations and enhance team collaboration, ultimately driving my decision to pursue a degree in IT.\n"
+      "I played a key role in ensuring operational efficiency and making strategic decisions. My passion for technology grew as I sought out tools and systems to improve logistics operations and enhance team collaboration, ultimately driving my decision to pursue a degree in IT.\n",
   },
   {
     id: "timeline-edu",
@@ -20,7 +26,7 @@ const timelineData = [
     description:
       "Earned my degree in Computer Software Technology with a specialization in web development, databases, and core programming principles.\n" +
       "Gained hands-on experience with core web technologies including HTML, CSS, JavaScript, PHP, and frameworks like React, specializing in both front-end and back-end development.\n" +
-      "Developed a strong expertise in relational databases and SQL, gaining a deep understanding of database management, optimization, and querying techniques.\n"
+      "Developed a strong expertise in relational databases and SQL, gaining a deep understanding of database management, optimization, and querying techniques.\n",
   },
   {
     id: "timeline-work",
@@ -55,20 +61,20 @@ const techStackData = {
   "Back-End": [
     { icon: "fab fa-java", name: "Java", tooltip: "Java" },
     { icon: "fab fa-node", name: "Node.js", tooltip: "Node.js" },
-    { name: "SQL", tooltip: "SQL", imageSrc: "/src/assets/sql-icon.svg" },
+    { name: "SQL", tooltip: "SQL", imageSrc: sqlIcon },
     { icon: "fab fa-aws", name: "AWS", tooltip: "AWS" },
-    { name: "Vite", tooltip: "Vite", imageSrc: "/src/assets/vite-icon.svg" },
+    { name: "Vite", tooltip: "Vite", imageSrc: viteIcon },
   ],
   Testing: [
     {
       name: "Cypress",
       tooltip: "Cypress",
-      imageSrc: "/src/assets/Cypress-Logo-White.png",
+      imageSrc: cypressLogo,
     },
     {
       name: "Selenium",
       tooltip: "Selenium",
-      imageSrc: "/src/assets/Selenium-Icon.svg",
+      imageSrc: seleniumIcon,
     },
     {
       icon: "fas fa-list-check",
@@ -80,10 +86,10 @@ const techStackData = {
   Software: [
     { icon: "fab fa-git", name: "Git", tooltip: "Git" },
     { icon: "fab fa-github", name: "Github", tooltip: "Github" },
-    { name: "SEO", tooltip: "SEO", imageSrc: "/src/assets/seo-icon.svg" },
+    { name: "SEO", tooltip: "SEO", imageSrc: seoIcon },
     { icon: "fab fa-figma", name: "Figma", tooltip: "Figma" },
     { icon: "fab fa-bitbucket", name: "Bitbucket", tooltip: "Bitbucket" },
-    { name: "Jira", tooltip: "Jira", imageSrc: "/src/assets/jira-icon.svg" },
+    { name: "Jira", tooltip: "Jira", imageSrc: jiraIcon },
   ],
 };
 
