@@ -1,5 +1,9 @@
 import "./Component-Styles/Projects.css";
 import "./Component-Styles/Hero.css";
+import webScraper from "../assets/Projects-Assets/Crawler-Placeholder.png";
+import dhiGif from "../assets/Projects-Assets/Homepage-Recording.gif";
+import portfolioGif from "../assets/Projects-Assets/Portfolio-Recording.gif";
+import weatherImg from "../assets/Projects-Assets/Weather-app-placeholder.png";
 
 function Projects() {
   return (
@@ -12,7 +16,7 @@ function Projects() {
               <img
                 className="project-1-image"
                 alt="Homepage Work at DHI Group"
-                src="src/assets/Projects-Assets/Crawler-Placeholder.png"
+                src= {webScraper}
               ></img>
             </div>
             <div className="projects-text-container">
@@ -46,7 +50,7 @@ function Projects() {
               <img
                 className="project-1-image"
                 alt="Homepage Work at DHI Group"
-                src="src/assets/Projects-Assets/Homepage-Recording.gif"
+                src= {dhiGif}
                 loading="lazy"
               ></img>
             </div>
@@ -88,7 +92,7 @@ function Projects() {
               <img
                 className="project-1-image"
                 alt="Homepage Work at DHI Group"
-                src="src/assets/Projects-Assets/Portfolio-Recording.gif"
+                src= {portfolioGif}
                 loading="lazy"
               ></img>
             </div>
@@ -128,7 +132,7 @@ function Projects() {
               <img
                 className="project-1-image"
                 alt="Homepage Work at DHI Group"
-                src="src/assets/Projects-Assets/Weather-app-placeholder.png"
+                src= {weatherImg}
               ></img>
             </div>
             <div className="projects-text-container">
