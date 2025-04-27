@@ -3,7 +3,11 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .about-contianer {
+=======
+.about-container {
+>>>>>>> UI-updates
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -26,6 +30,7 @@
   color: #c042d5;
 }
 
+<<<<<<< HEAD
 .about-body {
   display: flex;
   flex-direction: column;
@@ -33,6 +38,8 @@
   align-items: center;
 }
 
+=======
+>>>>>>> UI-updates
 .about-img-container {
   text-align: center;
 }
@@ -41,6 +48,11 @@
   height: 150px;
   width: 150px;
   border-radius: 10px;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-text-container p {
@@ -286,20 +298,32 @@
 }
 
 @media (min-width: 992px) {
+<<<<<<< HEAD
   .about-body {
     flex-direction: row;
     gap: 4rem;
     align-items: flex-start;
   }
 
+=======
+>>>>>>> UI-updates
   .about-title {
     font-size: 2.5rem;
   }
 
-  .about-text-container p {
-    font-size: 1.2rem;
+  .about-text-container {
+    align-items: flex-end;
   }
 
+<<<<<<< HEAD
+=======
+  .about-text-container p {
+    font-size: 1.2rem;
+    max-width: 75%;
+    display: flex;
+  }
+
+>>>>>>> UI-updates
   .tech-stack-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -334,14 +358,17 @@
 }
 
 @media (min-width: 1200px) {
-  .about-body {
-    gap: 6rem;
-  }
-
   .tech-stack-container {
     max-width: 1400px;
   }
 
+<<<<<<< HEAD
+  .tech-stack-container {
+    max-width: 1400px;
+  }
+
+=======
+>>>>>>> UI-updates
   .timeline-container li {
     max-width: 1400px;
   }

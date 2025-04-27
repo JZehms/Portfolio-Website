@@ -107,6 +107,7 @@
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
   #hero .hero-container {
     display: flex;
     flex-direction: column;
@@ -114,6 +115,8 @@
     padding: 4rem 2.5rem;
   }
 
+=======
+>>>>>>> UI-updates
   #hero .landing-intro {
     font-size: 2rem;
   }
@@ -121,6 +124,8 @@
   #hero .landing-intro-name {
     font-size: 3rem;
     margin: 1rem 0;
+<<<<<<< HEAD
+=======
   }
 
   #hero .hero-title {
@@ -140,5 +145,34 @@
   #hero .contact-button,
 .contact-resume {
   font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  #hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2.5rem;
+    align-items: flex-start;
+>>>>>>> UI-updates
+  }
+
+  #hero .hero-title {
+    font-size: 2rem;
+  }
+
+  #hero .hero-sub-text {
+    font-size: 1.5rem;
+  }
+
+  #hero .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #hero .contact-button,
+.contact-resume {
+  font-size: 1.25rem;
+}
 }
 }
