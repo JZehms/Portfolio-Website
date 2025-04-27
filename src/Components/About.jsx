@@ -90,11 +90,7 @@ const techStackData = {
 const About = () => {
   return (
     <section id="about">
-<<<<<<< HEAD
-      <div className="about-contianer">
-=======
       <div className="about-container">
->>>>>>> UI-updates
         <div className="about-content">
           <h2 className="about-title">About Me</h2>
           <div className="about-body">

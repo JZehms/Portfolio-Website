@@ -3,11 +3,7 @@
   justify-content: center;
 }
 
-<<<<<<< HEAD
-.about-contianer {
-=======
 .about-container {
->>>>>>> UI-updates
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -30,16 +26,6 @@
   color: #c042d5;
 }
 
-<<<<<<< HEAD
-.about-body {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-=======
->>>>>>> UI-updates
 .about-img-container {
   text-align: center;
 }
@@ -298,15 +284,6 @@
 }
 
 @media (min-width: 992px) {
-<<<<<<< HEAD
-  .about-body {
-    flex-direction: row;
-    gap: 4rem;
-    align-items: flex-start;
-  }
-
-=======
->>>>>>> UI-updates
   .about-title {
     font-size: 2.5rem;
   }
@@ -315,15 +292,12 @@
     align-items: flex-end;
   }
 
-<<<<<<< HEAD
-=======
   .about-text-container p {
     font-size: 1.2rem;
     max-width: 75%;
     display: flex;
   }
 
->>>>>>> UI-updates
   .tech-stack-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -362,13 +336,6 @@
     max-width: 1400px;
   }
 
-<<<<<<< HEAD
-  .tech-stack-container {
-    max-width: 1400px;
-  }
-
-=======
->>>>>>> UI-updates
   .timeline-container li {
     max-width: 1400px;
   }
