@@ -131,8 +131,8 @@ function Projects() {
               <h3 className="projects-card-title">Weather Website</h3>
               <div className="project-languages">
                 <span className="react-style">ReactJS</span>,{" "}
-                <span className="html-style">OpenWeatherMap API/Rapid API</span>
-                , <span className="js-style">Leaflet</span>,{" "}
+                <span className="html-style">OpenWeatherMap API/Rapid API</span>,{" "}
+                <span className="js-style">Leaflet</span>,{" "}
                 <span className="java-style">JavaScript</span>
               </div>
               <p className="projects-text">
@@ -146,7 +146,8 @@ function Projects() {
                 for real-time conditions, a 5-day forecast, and city search
                 capabilities. It also uses the browser's Geolocation API to
                 quickly fetch local weather.
-                <span className="projects-inverse">{" "}
+                <span className="projects-inverse">
+                  {" "}
                   My goal is to continue refining the user experience and
                   potentially adapt the UI for mobile as a next step.
                 </span>
