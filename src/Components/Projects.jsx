@@ -3,7 +3,7 @@ import "./Component-Styles/Hero.css";
 import webScraper from "../assets/Projects-Assets/Crawler-Placeholder.png";
 import dhiGif from "../assets/Projects-Assets/Homepage-Recording.gif";
 import portfolioGif from "../assets/Projects-Assets/Portfolio-Recording.gif";
-import weatherImg from "../assets/Projects-Assets/Weather-app-placeholder.png";
+import weatherImg from "../assets/Projects-Assets/nimbus-app.png";
 
 function Projects() {
   return (
@@ -131,26 +131,30 @@ function Projects() {
               <h3 className="projects-card-title">Weather Website</h3>
               <div className="project-languages">
                 <span className="react-style">ReactJS</span>,{" "}
-                <span className="html-style">Express.js</span>,{" "}
-                <span className="js-style">Tailwind</span>,{" "}
-                <span className="java-style">NodeJS</span>
+                <span className="html-style">OpenWeatherMap API/Rapid API</span>
+                , <span className="js-style">Leaflet</span>,{" "}
+                <span className="java-style">JavaScript</span>
               </div>
               <p className="projects-text">
                 This is my{" "}
-                <span className="projects-inverse">current project.</span> I'm
-                building a weather website to deepen my knowledge of ReactJS,
-                Vite, and React Query for API integration. Along with frontend
-                experience, I'm using Node.js and Express to fetch and manage
-                API data.{" "}
-                <span className="projects-inverse">
-                  My goal is to turn this into a mobile app with React Native,
-                  gaining experience in cross-platform development.
-                </span>{" "}
-                By doing this, I’ll learn how to adapt the web app into a mobile
-                app, expanding my skills in both web and mobile platforms.
+                <span className="projects-inverse">latest project.</span> I
+                built a dynamic weather dashboard to deepen my knowledge of{" "}
+                <span className="projects-bold">ReactJS</span> and practical API
+                integration. The application features an interactive weather map
+                built with the Leaflet library, and it integrates data from{" "}
+                <span className="projects-inverse">multiple external APIs</span>{" "}
+                for real-time conditions, a 5-day forecast, and city search
+                capabilities. It also uses the browser's Geolocation API to
+                quickly fetch local weather.
+                <span className="projects-inverse">{" "}
+                  My goal is to continue refining the user experience and
+                  potentially adapt the UI for mobile as a next step.
+                </span>
               </p>
               <div className="view-project-button">
-                <button className="project-button">In Progress</button>
+                <a href="https://jzehms.github.io/Nimbus-Weather-App/">
+                  <button className="project-button">View Web App</button>
+                </a>
               </div>
             </div>
           </div>
